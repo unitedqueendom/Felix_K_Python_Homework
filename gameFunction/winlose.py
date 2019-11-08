@@ -1,4 +1,5 @@
 from random import randint
+from gameFunction import gameVars
 
 def winorlose(status):
 	print("called win or lose function", status, "\n")
@@ -6,15 +7,11 @@ def winorlose(status):
 	choice = input("Y / N?")
 
 	if choice == "Y" or choice == "y":
-		global player_lives
-		global computer_lives
-		global player
-		global computer
 		# reset the game and start all over again
-		player_lives = 1
-		computer_lives = 1
-		player = False
-		computer = choices[randit(0, 2)]
+		gameVars.player_lives = 1
+		gameVars.computer_lives = 1
+		gameVars.player = False
+		gameVars.computer = gameVars.choices[randint(0, 2)]
 
 	elif choice == "N" or choice == "n":
 		print("You chose to quit. Better luck next time!")
