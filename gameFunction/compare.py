@@ -15,24 +15,71 @@ def compareChoices(player):
 
 	elif player == "rock":
 		if gameVars.computer == "paper":
-			print("You lose!", gameVars.computer, "covers", player, "\n")
-			gameVars.player_lives = gameVars.player_lives
+			print("\033[2;35;47m""You lose!", gameVars.computer, "covers", player, "\n")
+			gameVars.player_lives = gameVars.player_lives -1
+			print("   +++   ")
+			print("   +++   ")
+			print("+++++++++")
+			print("+++++++++")
+			print("   +++   ")
+			print("   +++   ")
+			print("  (+++)  ")
+			print(" (+++++) ")
+			print("(+++++++)")
+
+
 		else:
-			print("You won!", player, "smashes", gameVars.computer, "\n")
+			print("\033[2;33;47m""You won!", player, "smashes", gameVars.computer, "\n")
 			gameVars.computer_lives = gameVars.computer_lives -1
+			print("     *     ")
+			print("   *-|-*   ")
+			print("   ..*..   ")
+			print("  *******  ")
+			print("\*********/")
+			print("(((((0)))))")
 
 	elif player == "paper":
 		if gameVars.computer == "scissors":
-			print("You lose!", gameVars.computer, "cuts", player, "\n")
+			print("\033[2;35;47m""You lose!", gameVars.computer, "cuts", player, "\n")
 			gameVars.player_lives = gameVars.player_lives -1
+			print("   +++   ")
+			print("   +++   ")
+			print("+++++++++")
+			print("+++++++++")
+			print("   +++   ")
+			print("   +++   ")
+			print("  (+++)  ")
+			print(" (+++++) ")
+			print("(+++++++)")
 		else:
-			print("You won!", player, "covers", gameVars.computer, "\n")
+			print("\033[2;33;47m""You won!", player, "covers", gameVars.computer, "\n")
 			gameVars.computer_lives = gameVars.computer_lives -1
+			print("     *     ")
+			print("   *-|-*   ")
+			print("   ..*..   ")
+			print("  *******  ")
+			print("\*********/")
+			print("(((((0)))))")
 	
 	elif player == "scissors":
 		if gameVars.computer == "rock":
-			print("You lose!", gameVars.computer, "smashes", player, "\n")
+			print("\033[2;35;47m""You lose!", gameVars.computer, "smashes", player, "\n")
 			gameVars.player_lives = gameVars.player_lives -1
+			print("   +++   ")
+			print("   +++   ")
+			print("+++++++++")
+			print("+++++++++")
+			print("   +++   ")
+			print("   +++   ")
+			print("  (+++)  ")
+			print(" (+++++) ")
+			print("(+++++++)")
 		else:
-			print("You won!", player, "cuts", gameVars.computer, "\n")
+			print("\033[2;33;47m""You won!", player, "cuts", gameVars.computer, "\n")
 			gameVars.computer_lives = gameVars.computer_lives -1
+			print("     *     ")
+			print("   *-|-*   ")
+			print("   ..*..   ")
+			print("  *******  ")
+			print("\*********/")
+			print("(((((0)))))")

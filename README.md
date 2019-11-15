@@ -16,3 +16,10 @@ Choose your weapon wisely!
 uilt with Python 3
 
 Enjoy!
+
+2019/11/15
+This is the starting point
+Added text color and background color
+Added simple Ascii Art for win or lose of every round
+Finished test of RPS game in terminal
+Added different text color depends win or lose.
