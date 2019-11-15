@@ -16,7 +16,7 @@ def compareChoices(player):
 	elif player == "rock":
 		if gameVars.computer == "paper":
 			print("You lose!", gameVars.computer, "covers", player, "\n")
-			gameVars.player_lives = gameVars.player_lives -1
+			gameVars.player_lives = gameVars.player_lives
 		else:
 			print("You won!", player, "smashes", gameVars.computer, "\n")
 			gameVars.computer_lives = gameVars.computer_lives -1

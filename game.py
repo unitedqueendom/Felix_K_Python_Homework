@@ -3,11 +3,11 @@ from random import randint
 from gameFunction import winlose, gameVars, compare
 
 while gameVars.player is False:
-	print("============================================")
-	print("Computer Lives:", gameVars.computer_lives, "/5")
-	print("Player Lives:", gameVars.player_lives, "/5")
-	print("============================================")
-	print("Choose your weapon!\n")
+	print("\033[2;31;47m""============================================")
+	print("\033[2;31;47m""Computer Lives:", gameVars.computer_lives, "/5")
+	print("\033[2;31;47m""Player Lives:", gameVars.player_lives, "/5")
+	print("\033[2;31;47m""============================================")
+	print("\033[2;31;47m""Choose your weapon!\n")
 	player=input("choose rock, paper or scissors \n")
 	compare.compareChoices(player)
 
@@ -19,10 +19,10 @@ while gameVars.player is False:
 	# -- end compare stuff
 
 	
-	if gameVars.player_lives is 0:
+	if gameVars.player_lives == 0:
 		winlose.winorlose("lost")
 
-	elif gameVars.computer_lives is 0:
+	elif gameVars.computer_lives == 0:
 		winlose.winorlose("won")
 	
 	else:
